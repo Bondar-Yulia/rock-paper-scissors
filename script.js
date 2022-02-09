@@ -19,7 +19,7 @@ const playRound = (playerSelection, computerSelection) => {
 
 const gameResult = (playerScore, computerScore) => {
     let message = (playerScore > computerScore) ? 'You won!' : 
-        (playerScore < computerPlay) ? 'You lost' : 'It\'s tie';
+        (playerScore < computerScore) ? 'You lost' : 'It\'s tie';
     return message + '\n' + `Total score is ${playerScore} : ${computerScore}`;
 }
 
