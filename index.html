@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <h1>Choose your weapon</h1>
+    <p class="info">First to score 5 points wins the game</p>
+    <div class="buttons">
+        <button data-weapon="Rock"> <img src="./images/rock.png" alt=""></button>
+        <button data-weapon="Paper"> <img src="./images/paper.png" alt=""></button>
+        <button data-weapon="Scissors"> <img src="./images/scissors.png" alt=""></button>
+    </div>
+    <div class="score">
+        <div>
+            <p>Player: <span class="player">0</span></p>
+            <p class="playerWeapon">?</p> 
+        </div>
+        <div>
+           <p>Computer: <span class="computer">0</span></p> 
+           <p class="computerWeapon">?</p>
+        </div>
+    </div>
+    <div class="modal">
+        <p class="modalResult"></p>
+        <p class="modalScore"></p>
+        <button class="restartBtn">Play again</button>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

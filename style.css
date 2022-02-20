@@ -1,0 +1,80 @@
+body{
+    background: #b3f0ff;
+    text-align: center;
+    font-size: 22px;
+}
+
+h1{
+    font-size: 44px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.75rem yellow);
+}
+
+.score {
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.playerWeapon, .computerWeapon {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.modal {
+    box-shadow: rgba(49, 9, 226, 0.1) 0px 2px 8px 0px, rgba(65, 8, 223, 0.2) 0px 2px 16px 0px;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    top: 45%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    background-color:  #fffffff7;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+  }
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modalResult {
+    margin: 10px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.restartBtn {
+    font-size: 18px;
+    background-color: #00000055;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+
+
