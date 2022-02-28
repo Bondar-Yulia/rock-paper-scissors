@@ -77,7 +77,8 @@ const playRound = (e) => {
 const showModal = () => {
     const modalResult = document.querySelector('.modalResult');
     const modalScore = document.querySelector('.modalScore');
-    modalResult.textContent = (playerScore > computerScore) ? 'You won' : 'You lost';
+    modalResult.textContent = (playerScore > computerScore) ? 'You won': 
+        (playerScore < computerScore) ? 'You lost': 'It\'s a tie';
     modalScore.textContent = `${playerScore} : ${computerScore}`;
     modal.classList.add('active');
     const restartButton = document.querySelector('.restartBtn');
