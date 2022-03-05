@@ -1,13 +1,14 @@
+const title = document.querySelector('h1');
+const info = document.querySelector('.info');
+const modal = document.querySelector('.modal');
+const player = document.querySelector('.player');
+const computer = document.querySelector('.computer');
+const buttons = document.querySelector('.buttons'); 
+
 let playerScore = 0;
 let computerScore = 0;
 let playerChoice;
 let computerChoice;
-let title = document.querySelector('h1');
-let info = document.querySelector('.info');
-const modal = document.querySelector('.modal');
-let player = document.querySelector('.player');
-let computer = document.querySelector('.computer');
-
 
 const computerPlay = () => {
     let options = ['Rock', 'Paper', 'Scissors'];
@@ -21,8 +22,8 @@ const identifyWeaponSign = (weapon) => {
 }
 
 showChosenWeapon = () => {
-    let playerWeapon = document.querySelector('.playerWeapon');
-    let computerWeapon = document.querySelector('.computerWeapon');
+    const playerWeapon = document.querySelector('.playerWeapon');
+    const computerWeapon = document.querySelector('.computerWeapon');
     playerWeapon.textContent = identifyWeaponSign(playerChoice);
     computerWeapon.textContent = identifyWeaponSign(computerChoice);
 }
@@ -103,7 +104,5 @@ const playGame = (e) => {
         showModal();
     }
 }  
-
-const buttons = document.querySelector('.buttons');   
+  
 buttons.addEventListener('click', playGame);
-
